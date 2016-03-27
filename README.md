@@ -1,0 +1,3 @@
+# Timestamp Microservice for freeCodeCamp
+
+No ClementineJS, since it's just a couple of lines of coffee-script really...

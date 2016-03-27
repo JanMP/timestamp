@@ -1,0 +1,14 @@
+{
+  "name": "timestamp-microservice",
+  "version": "0.0.1",
+  "description": "A Timestamp microservice for freeCodeCamp",
+  "main": "server.js",
+  "repository": "",
+  "author": "JanPilgenröder <pille@mac.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "dotenv": "^2.0.0",
+    "express": "~3.2.4",
+    "socket.io": "~0.9.14"
+  }
+}

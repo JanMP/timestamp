@@ -1,7 +1,6 @@
 'use strict'
 
 express = require "express"
-platform = require "platform"
 app = express()
 require("dotenv").load()
 
@@ -18,7 +17,9 @@ app.get "/:str", (req, res) ->
     result =
       unix : Number date
       natural : date.toLocaleDateString()
-  res.send JSON.stringify result
+  resultStr = JSON.stringify result
+  console.log "#{str} => #{resultStr}"
+  res.send resultStr
 
 port = process.env.PORT or 8080
 app.listen port, ->

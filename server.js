@@ -9,6 +9,10 @@
 
   require("dotenv").load();
 
+  app.get("/", function(req, res) {
+    return res.send("append a unix- or natural date to the url");
+  });
+
   app.get("/:str", function(req, res) {
     var date, result, resultStr, str;
     str = req.params.str;

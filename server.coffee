@@ -4,6 +4,9 @@ express = require "express"
 app = express()
 require("dotenv").load()
 
+app.get "/", (req, res) ->
+  res.send "append a unix- or natural date to the url"
+  
 app.get "/:str", (req, res) ->
   {str} = req.params
   unless isNaN str
